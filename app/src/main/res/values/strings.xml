@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TouchLock</string>
+    <string name="accessibility_service_description">By activating this service, you are allowing this Lock Screen App to perform screen locks operation every time you tap on Lock Screen App.</string>
+    <string name="device_admin_description">Allowing this App to perform screen locks operation.</string>
+    <string name="label_device_admin">Grant Lock Screen</string>
+    <string name="msg_info_accessibility_setting_guide">To use lock screen service:\101. Select Lock Screen &gt; Toggle Use service to ON. \102. Exit Accessibility Settings screen and tap Lock Screen App to lock.</string>
+    <string name="msg_info_accessibility_setting_off">You need to enable accessibility service for Lock Screen App to perform screen locks operation.</string>
+    <string name="msg_info_device_admin_expl">A convenient way to lock your phone\'s screen in one tap.</string>
+    <string name="msg_info_grant_failed">You need to grant this App with Device Administration to allow this App to perform screen lock operation.</string>
+    <string name="msg_info_grant_success">Lock Screen App has been granted with Device Administration.\10Now you can tap Lock Screen App to lock your phone\'s screen.</string>
+    <string name="msg_info_uninstall_guide">To uninstall Lock Screen App:\101. Go to phone\'s Settings &gt; Security &gt; Device administrators &gt; Uncheck Lock Screen.\102. Go to phone\'s Settings &gt; Apps &gt; Lock Screen &gt; Tap Uninstall.</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="appwidget_admin_text">ADMIN</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+
+</resources>
