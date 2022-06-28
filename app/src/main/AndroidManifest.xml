@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dadashri.bhavesh.touchlock">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/lock_logo"
@@ -16,6 +13,7 @@
         <activity
             android:name=".AdminLockActivity"
             android:excludeFromRecents="true"
+            android:theme="@style/Theme.Transparent"
             android:exported="false" />
 
         <receiver
@@ -34,6 +32,7 @@
         <activity
             android:name=".LockActivity"
             android:excludeFromRecents="true"
+            android:theme="@style/Theme.Transparent"
             android:exported="false" />
         <receiver
             android:name=".TouchLockWidget"
