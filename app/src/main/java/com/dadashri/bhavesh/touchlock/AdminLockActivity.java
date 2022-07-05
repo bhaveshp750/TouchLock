@@ -34,6 +34,7 @@ public class AdminLockActivity extends AppCompatActivity {
                         DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN).putExtra(
                         DevicePolicyManager.EXTRA_DEVICE_ADMIN, admin);
                 startActivity(intent);
+                finish();
             }
         }
     }

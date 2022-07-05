@@ -43,7 +43,7 @@ public class TouchLockWidget extends AppWidgetProvider {
                 RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.touch_lock_widget);
                 Intent configIntent = new Intent(context, LockActivity.class);
 
-                PendingIntent configPendingIntent = PendingIntent.getActivity(context, 0, configIntent, 0);
+                PendingIntent configPendingIntent = PendingIntent.getActivity(context, 12544456, configIntent, PendingIntent.FLAG_IMMUTABLE);
 
                 remoteViews.setOnClickPendingIntent(R.id.appwidget_lock, configPendingIntent);
                 appWidgetManager.updateAppWidget(R.id.appwidget_lock, remoteViews);
@@ -53,7 +53,7 @@ public class TouchLockWidget extends AppWidgetProvider {
             RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.touch_lock_widget);
             Intent configIntent = new Intent(context, LockActivity.class);
 
-            PendingIntent configPendingIntent = PendingIntent.getActivity(context, 0, configIntent, 0);
+            PendingIntent configPendingIntent = PendingIntent.getActivity(context, 12544456, configIntent, PendingIntent.FLAG_MUTABLE);
 
             remoteViews.setOnClickPendingIntent(R.id.appwidget_lock, configPendingIntent);
             appWidgetManager.updateAppWidget(R.id.appwidget_lock, remoteViews);
@@ -85,7 +85,7 @@ public class TouchLockWidget extends AppWidgetProvider {
                 RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.touch_lock_widget);
                 Intent configIntent = new Intent(context, LockActivity.class);
 
-                PendingIntent configPendingIntent = PendingIntent.getActivity(context, 0, configIntent, 0);
+                PendingIntent configPendingIntent = PendingIntent.getActivity(context, 12544456, configIntent, PendingIntent.FLAG_IMMUTABLE);
 
                 remoteViews.setOnClickPendingIntent(R.id.appwidget_lock, configPendingIntent);
                 appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
@@ -95,7 +95,7 @@ public class TouchLockWidget extends AppWidgetProvider {
             RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.touch_lock_widget);
             Intent configIntent = new Intent(context, LockActivity.class);
 
-            PendingIntent configPendingIntent = PendingIntent.getActivity(context, 0, configIntent, 0);
+            PendingIntent configPendingIntent = PendingIntent.getActivity(context, 12544456, configIntent, PendingIntent.FLAG_MUTABLE);
 
             remoteViews.setOnClickPendingIntent(R.id.appwidget_lock, configPendingIntent);
             appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
