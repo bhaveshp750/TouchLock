@@ -13,7 +13,6 @@
         <activity
             android:name=".AdminLockActivity"
             android:excludeFromRecents="true"
-            android:theme="@style/Theme.Transparent"
             android:exported="false" />
 
         <receiver

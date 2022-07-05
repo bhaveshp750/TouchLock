@@ -36,15 +36,15 @@ public class LockActivity extends AppCompatActivity {
                 intent.putExtra("android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_NAME", "com.dadashri.bhavesh.touchlock");
                 startActivity(intent);
             }
-            finish();
+            finishAffinity();
         } else if (!m2a(getApplicationContext())) {
             Toast.makeText(getApplicationContext(), R.string.msg_info_accessibility_setting_off, Toast.LENGTH_LONG).show();
             startActivity(new Intent("android.settings.ACCESSIBILITY_SETTINGS"));
             Toast.makeText(getApplicationContext(), R.string.msg_info_accessibility_setting_guide, Toast.LENGTH_LONG).show();
-            finish();
+            finishAffinity();
         }else{
             LockScreenAccessibilityService.m0a();
-            finish();
+            finishAffinity();
         }
 
     }
@@ -74,7 +74,7 @@ public class LockActivity extends AppCompatActivity {
     public void onResume() {
         super.onResume();
         if (isTaskRoot()) {
-            finish();
+            finishAffinity();
         }
     }
 }
