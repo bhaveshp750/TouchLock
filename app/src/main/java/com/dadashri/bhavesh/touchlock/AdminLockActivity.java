@@ -1,9 +1,7 @@
 package com.dadashri.bhavesh.touchlock;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import android.app.admin.DeviceAdminReceiver;
 import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -22,7 +20,7 @@ public class AdminLockActivity extends AppCompatActivity {
 
     private void adminLock() {
         PowerManager pm = (PowerManager)getSystemService(Context.POWER_SERVICE);
-        if (pm.isScreenOn()) {
+        if (pm.isInteractive()) {
             DevicePolicyManager policy = (DevicePolicyManager)
                     getSystemService(Context.DEVICE_POLICY_SERVICE);
             try {
@@ -34,7 +32,7 @@ public class AdminLockActivity extends AppCompatActivity {
                         DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN).putExtra(
                         DevicePolicyManager.EXTRA_DEVICE_ADMIN, admin);
                 startActivity(intent);
-                finish();
+                finishAffinity();
             }
         }
     }
@@ -42,6 +40,6 @@ public class AdminLockActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        finish();
+        finishAffinity();
     }
 }
